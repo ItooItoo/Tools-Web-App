@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Conventer
+{% endblock %}
+
+{% block main %}
+<h1 class="big-sign">Your location</h1>
+<div class="location">
+    <form method="post">
+        <input type="text" name="user-location" id="user-location" step="any" autofocus placeholder="Search" autocomplete="off" />
+        <button type="submit"><i class="gg-search"></i></button>
+      </form>
+</div>
+<div class="block">
+    <div class="weather">
+        <h1>{{ celcius_temp }}&#8451</h1>
+        <img src="/static//icon/{{icon}}.png" />
+        <h2>{{ user_location }}</h2>
+        <h3>{{ weather_description }}</h3>
+        <h4>Pressure: {{ pressure }}hPa</h4>
+        <h4>Wind speed: {{ wind_speed }}m/s</h4>
+        <h4>Humidity: {{ humidity }}%</h4>
+
+    </div>
+</div>
+{% endblock %}

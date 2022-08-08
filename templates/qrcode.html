@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Qrcode
+{% endblock %}
+
+{% block main %}
+<form method="post">
+  <h1 class="sign">Generate Your QR Code</h1>
+  <div class="qr-input">
+    <input type="url" class="url-input" name="url" id="url" autofocus  min="0" placeholder="Paste your url"/>
+    <button type="submit" class="submit-btn">Generate</button>
+  </div>
+</form>
+{% endblock %}

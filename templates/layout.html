@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tools:  {% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://css.gg/search.css' rel='stylesheet'>
+    <link href="/static/styles.css" rel="stylesheet" />
+    <link href="/static/qr-code.png" rel="icon" />
+  </head>
+  <body class="background">
+    <div class="left-bar">
+      <header>Tools</header>
+      <a href="/">QR code</a>
+      <a href="/conventer">Conventer</a>
+      <a href="/weather">Weather</a>
+    </div>
+
+    {% block main %}{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Conventer
+{% endblock %}
+
+{% block main %}
+  <div class="convert">
+    <div class="conventer">
+      <h1>Miles to Kilometers</h1>
+        <form method="post">
+          <input type="number" name="mile" id="mile" step="any" autofocus placeholder="Number"/>
+          <br>
+          <button type="submit">Convert</button>
+          <h2>~{{ kilometers }} km</h2>
+        </form>
+    </div>
+    <div class="conventer">
+      <h1>Inches to centimeters</h1>
+      <form method="post">
+        <input type="number" name="inch" id="inch" step="any" autofocus placeholder="Number"/>
+        <br>
+        <button type="submit"=>Convert</button> 
+        <h2>~{{ centimeters }} cm</h2>
+      </form>
+
+    </div>
+      <div class="conventer">
+        <h1>Feet to centimeters</h1>
+          <form method="post">
+            <input type="number" name="feet" id="feet" step="any" autofocus placeholder="Number"/>
+            <br>
+            <button type="submit">Convert</button>
+            <h2>~{{ f_centimeters }} cm</h2>
+          </form>
+      </div>
+
+      <div class="conventer">
+        <h1>Yards to meters</h1>
+          <form method="post">
+            <input type="number" name="yard" id="yard" step="any" autofocus placeholder="Number"/>
+            <br>
+            <button type="submit">Convert</button>
+            <h2>~{{ meters }} m</h2>
+          </form>
+      </div>
+  </div>
+{% endblock %}
